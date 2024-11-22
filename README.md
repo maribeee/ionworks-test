@@ -1,3 +1,6 @@
+Scroll to bottom of Readme for a screenshot :)
+
+
 # Run Locally
 
 1. Clone the project to your local machine
@@ -31,3 +34,6 @@
     - This is the controller that manages API calls (WIP)
   * /routes/api.php
     - Where the route to call the controller is defined
+
+
+![Screenshot](./readme_assets/sshot.jpg)
