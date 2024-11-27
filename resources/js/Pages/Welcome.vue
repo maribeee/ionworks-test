@@ -24,17 +24,21 @@
 
             <div class="flex flex-row gap-4 my-6 px-2 items-center">
               <p class="font-bold">Filters:</p>
-              <label for="cRate">C-rate
+              <label class="flex flex-row gap-2 items-center" for="cRate">
+                <span class="text-sm">C-rate</span>
                 <select class="border border-gray-300 rounded-xl text-sm py-1" id="cRate" name="cRate" v-model="selectedCRate">
                   <option :value="-1" selected>All C-rates</option>
                   <option v-for="cRate in cRateArray" :value="cRate">{{ cRate }}</option>
                 </select>
               </label>
 
-              <select class="border border-gray-300 rounded-xl text-sm py-1" id="cRate" name="cRate" v-model="selectedTemp">
-                <option :value="-1" selected>All Temperatures</option>
-                <option v-for="temp in tempArray">{{ temp }}</option>
-              </select>
+              <label class="flex flex-row gap-2 items-center" for="temp">
+                <span class="text-sm">Temperature</span>
+                <select class="border border-gray-300 rounded-xl text-sm py-1" id="temp" name="temp" v-model="selectedTemp">
+                  <option :value="-1" selected>All Temperatures</option>
+                  <option v-for="temp in tempArray">{{ temp }}</option>
+                </select>
+              </label>
             </div>
 
 
