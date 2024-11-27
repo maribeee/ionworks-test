@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/api/jsonData', [DataController::class, 'show']);
+Route::get('/api/getAllData', [DataController::class, 'getAllData']);
+Route::get('/api/getChartData/crate/{cRate}/temp/{temp}', [DataController::class, 'getChartDataByArgs']);

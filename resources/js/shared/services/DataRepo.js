@@ -1,8 +1,10 @@
 import Repository from './Repository';
 
 export default {
-  getData() {
-    console.log('getData repo');
-    return Repository.get(`/jsonData`).then(response => response.data);
+  getAllData() {
+    return Repository.get(`/getAllData`).then(response => response.data);
   },
+  getChartByData(cRate, temp) {
+    return Repository.get(`/getChartData/crate/${cRate}/temp/${temp}`).then(response => response.data);
+  }
 };
