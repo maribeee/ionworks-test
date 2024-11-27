@@ -31,7 +31,8 @@ Scroll to bottom of Readme for a screenshot :)
   * /resources/js/shared/services
     - This is a service I built to make axios calls easier (calling data from backend still in progress)
   * /app/Http/Controllers/DataController.php
-    - This is the controller that manages API calls (WIP)
+    - This is the controller that manages API calls
+    - I didn't create a database so the data is an object in this datacontroller file, and is returned as a json response via API call based on data variables passed in the URI 
   * /routes/api.php
     - Where the route to call the controller is defined
 
