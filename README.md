@@ -16,7 +16,7 @@ Scroll to bottom of Readme for a screenshot :)
 
         composer run dev
 
-And in another terminal run the following to serve the site
+4. And in another terminal run the following to serve the site
 
     
         php artisan serve

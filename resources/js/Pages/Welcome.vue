@@ -1,4 +1,9 @@
 <template>
+  <Head>
+    <title>ionWorks - Mari Test :)</title>
+    <meta name="description" content="ionWorks data viz">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  </Head>
   <div class="min-h-screen bg-[#1a1a1a]">
 
     <div class="w-full px-16 py-8 flex flex-row items-center justify-between gap-12">
@@ -142,6 +147,8 @@
 <script>
 import VueApexCharts from "vue3-apexcharts";
 import {RepositoryFactory} from '../shared/services/RepositoryFactory';
+import { Head } from '@inertiajs/vue3';
+
 
 const DataRepo = RepositoryFactory.get('data');
 

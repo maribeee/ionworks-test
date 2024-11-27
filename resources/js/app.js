@@ -8,8 +8,9 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
+
 createInertiaApp({
-    title: (title) => `ionWorks`,
+    // title: (title) => `ionWorks`,
     resolve: (name) =>
         resolvePageComponent(
             `./Pages/${name}.vue`,
