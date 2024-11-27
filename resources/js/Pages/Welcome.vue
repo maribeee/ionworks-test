@@ -64,12 +64,11 @@
           </div>
 
           <div v-if="loading">Data loading...</div>
-          <div v-else class="flex flex-row odd:bg-gray-200" v-for="(item, index) in data">
+          <div v-else class="flex flex-row odd:bg-gray-200" v-for="([key, item], index) in Object.entries(data)">
             <div class="py-2 px-3 flex flex-row flex-1 gap-4 items-center">
               <div class="circle rounded-full w-[15px] h-[15px] block"
                    :style="['background:' + colors[index]]"
               ></div>
-              {{ index }}
               {{ item.id }}
             </div>
 
@@ -109,7 +108,7 @@
         </div>
 
         <div v-if="loading">Data loading...</div>
-        <div v-else class="flex flex-row odd:bg-gray-200" v-for="(item, index) in data">
+        <div v-else class="flex flex-row odd:bg-gray-200" v-for="([key, item], index) in Object.entries(data)">
           <div class="py-2 px-3 flex flex-row flex-1 gap-4 items-center">
             <div class="circle rounded-full w-[15px] h-[15px] block"
                  :style="['background:' + colors[index]]"
