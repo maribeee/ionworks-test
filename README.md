@@ -7,21 +7,20 @@ Scroll to bottom of Readme for a screenshot :)
 
 2. `cd` in to repo and run:
 
-    ```bash 
-       composer install
-       npm install
+
+        composer install
+        npm install
 
 3. To run the project, in one terminal run the following to build the site:
 
-        ```bash
+
         composer run dev
-        ```
 
-    And in another terminal run the following to serve the site
+And in another terminal run the following to serve the site
 
-    ```bash
-    php artisan serve
-    ```
+    
+        php artisan serve
+    
    
 
 # Files where you can find the work:
